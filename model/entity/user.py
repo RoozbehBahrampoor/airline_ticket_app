@@ -26,7 +26,7 @@ class User:
                 )
 
     def get_name(self):
-        return self._name
+        return self.name
 
     def set_name(self, value):
         name_validator(value)
