@@ -19,7 +19,7 @@ class ticket:
     def __repr__(self):
         return (f"{self.ticket()} {self.id} id: {self.ticket_code} ticket_code:  {self.origin} origine:"
                 f" {self.destination} destination: {self.airline} airline: {self.start_date_time} start_date_time:"
-                f" {self.end_date_time} end_date_time: ")
+                f" {self.end_date_time} end_date_time:  ")
 
     def to_tuple(self):
         return (self.id, self.ticket_code, self.origin, self.destination, self.airline, self.start_date_time,
