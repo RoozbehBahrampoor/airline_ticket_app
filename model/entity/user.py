@@ -1,5 +1,6 @@
 from model.tools.validation import *
 
+
 class User:
     ROLE_CUSTOMER = "customer"
     ROLE_ADMIN = "admin"
@@ -22,8 +23,9 @@ class User:
         return f"{self.user()} {self.user_name}"
 
     def to_tuple(self):
-        return (self.id, self.name, self.family, self.birth_date, self.user_name, self.password, self.is_locked, self.role
-                )
+        return (
+        self.id, self.name, self.family, self.birth_date, self.user_name, self.password, self.is_locked, self.role
+        )
 
     def get_name(self):
         return self.name
@@ -56,8 +58,9 @@ class User:
     def get_age(self):
         today = date.today()
         return today.year - self.birth_date.year - (
-            (today.month, today.day) < (self.birth_date.month, self.birth_date.day)
+                (today.month, today.day) < (self.birth_date.month, self.birth_date.day)
         )
+
     def get_role(self):
         return self._role()
 
@@ -78,8 +81,3 @@ class User:
     password = property(get_password, set_password)
     role = property(get_role, set_role)
     age = property(get_age, set_age)
-
-
-
-
-
