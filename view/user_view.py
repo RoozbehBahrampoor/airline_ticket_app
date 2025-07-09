@@ -8,11 +8,11 @@ class UserView:
             self.id.get(),
             self.name.get(),
             self.family.get(),
-            self.birth_date.get()
-            self.user_name.get()
-            self.password.get()
-            self.is_locked.get()
-            self.role.get()
+            self.birth_date.get(),
+            self.user_name.get(),
+            self.password.get(),
+            self.is_locked.get(),
+            self.role.get(),
         )
         if status:
             msg.showinfo("Save", message)
