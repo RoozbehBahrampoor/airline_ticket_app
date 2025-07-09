@@ -90,11 +90,6 @@ class ticket:
         sold_validator(value)
         self.sold = value
 
-
-
-
-
-
     id = property(get_id, set_id)
     ticket_code = property(get_ticket_code, set_ticket_code)
     origin = property(get_origin, set_origin)
@@ -104,6 +99,11 @@ class ticket:
     end_date_time = property(get_end_date_time, set_end_date_time)
     seat_no = property(get_seat_no, set_seat_no)
     sold = property(get_sold, set_sold)
+
+
+
+
+
 
 
 
