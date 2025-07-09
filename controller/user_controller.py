@@ -1,4 +1,4 @@
-from view.user_view import  User
+from model.entity.user import  User
 
 user_list = []
 
